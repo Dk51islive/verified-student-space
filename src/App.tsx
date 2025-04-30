@@ -9,6 +9,9 @@ import { ResourceProvider } from "./context/ResourceContext";
 import Navbar from "./components/layout/Navbar";
 import Index from "./pages/Index";
 import Resources from "./pages/Resources";
+import Events from "./pages/Events";
+import Community from "./pages/Community";
+import Admin from "./pages/Admin";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import VerifyEmail from "./pages/VerifyEmail";
@@ -30,6 +33,9 @@ const App = () => (
                 <Routes>
                   <Route path="/" element={<Index />} />
                   <Route path="/resources" element={<Resources />} />
+                  <Route path="/events" element={<Events />} />
+                  <Route path="/community" element={<Community />} />
+                  <Route path="/admin" element={<Admin />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/signup" element={<SignUp />} />
                   <Route path="/verify-email" element={<VerifyEmail />} />
