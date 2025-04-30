@@ -11,7 +11,7 @@ const Index = () => {
   const { isAuthenticated } = useAuth();
   const { resources } = useResources();
   
-  // Mock events data
+  // Mock events data with correct type values
   const events = [
     {
       id: '1',
@@ -20,7 +20,7 @@ const Index = () => {
       date: 'May 15, 2023',
       time: '10:00 AM - 5:00 PM',
       location: 'GTU Main Campus, Auditorium',
-      type: 'Festival',
+      type: 'Festival' as 'Festival',  // Explicitly typed as a literal
       capacity: 200,
       attendees: 120
     },
@@ -31,7 +31,7 @@ const Index = () => {
       date: 'May 20, 2023',
       time: '2:00 PM - 5:00 PM',
       location: 'Computer Science Building, Room 302',
-      type: 'Workshop',
+      type: 'Workshop' as 'Workshop',  // Explicitly typed as a literal
       capacity: 50,
       attendees: 45
     }
